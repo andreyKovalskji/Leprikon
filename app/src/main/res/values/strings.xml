@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Leprikon</string>
+    <string name="loading">Loading…</string>
+    <string name="loading_text">Just\nwait…</string>
+    <string name="games">Games</string>
+    <string name="slots">Slots</string>
+    <string name="blank">Blank</string>
+    <string name="slots_title">Slots</string>
+    <string name="bet_10">Bet 10</string>
+    <string name="bet_100">Bet 100</string>
+    <string name="bet_50">Bet 50</string>
+    <string name="bet_25">Bet 25</string>
+    <string name="spin">Spin</string>
+    <string name="balance">Balance: %d</string>
+    <string name="try_text">Try</string>
+    <string name="try_again_text">Try again</string>
+    <string name="total_win_text">Total win: %d</string>
+</resources>

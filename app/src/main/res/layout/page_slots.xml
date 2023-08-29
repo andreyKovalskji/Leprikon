@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/leaveGameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        app:layout_constraintBottom_toBottomOf="@+id/slotsTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/slotsTitle"
+        app:srcCompat="@drawable/round_arrow_back" />
+
+    <TextView
+        android:id="@+id/slotsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_background"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp"
+        android:text="@string/slots_title"
+        android:textColor="#F0F0"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/slots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:columnCount="5"
+        app:layout_constraintEnd_toEndOf="@+id/slotsTitle"
+        app:layout_constraintStart_toStartOf="@+id/slotsTitle"
+        app:layout_constraintTop_toBottomOf="@+id/slotsTitle">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/slot1"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/slot2"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_2" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/slot3"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_3" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/slot4"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_4" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/slot5"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_5" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/slot6"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_6" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/slot7"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_7" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/slot8"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_8" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/slot9"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_9" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/slot10"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/slot11"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_2" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/slot12"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_3" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/slot13"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_4" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/slot14"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_5" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/slot15"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_6" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/slot16"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_7" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/slot17"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_8" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/slot18"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_9" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/slot19"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/slot20"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_2" />
+    </GridLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_background"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slots">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bet10Button"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="0dp"
+            android:paddingStart="5dp"
+            android:gravity="center"
+            android:background="@drawable/selected_bet_10_background"
+            android:text="@string/bet_10" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bet25Button"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            android:text="@string/bet_25" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bet50Button"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            android:text="@string/bet_50" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bet100Button"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="5dp"
+            android:paddingStart="0dp"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            android:text="@string/bet_100" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/balanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="7dp"
+        android:layout_marginTop="10dp"
+        tools:text="Balance: 159135"
+        android:textColor="#F0F0"
+        android:background="@drawable/text_background"
+        android:paddingHorizontal="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/spinButton"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/game_button_selector"
+        android:text="@string/spin"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/balanceText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

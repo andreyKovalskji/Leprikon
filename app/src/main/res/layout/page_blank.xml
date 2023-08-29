@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/leaveGameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        app:layout_constraintBottom_toBottomOf="@+id/blankTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blankTitle"
+        app:srcCompat="@drawable/round_arrow_back" />
+
+    <TextView
+        android:id="@+id/blankTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_background"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp"
+        android:text="@string/blank"
+        android:textColor="#F0F0"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gameState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_background"
+        android:paddingHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:paddingVertical="5dp"
+        tools:text="Tap on Try button"
+        android:textColor="#F0F0"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blankTitle" />
+
+    <GridLayout
+        android:id="@+id/elements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:columnCount="5"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/blankTitle"
+        app:layout_constraintStart_toStartOf="@+id/blankTitle"
+        app:layout_constraintTop_toBottomOf="@+id/gameState">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_1"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_2"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_3"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_4"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_5"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_6"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_7"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_8"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_9"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_10"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_11"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_12"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_13"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_14"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_15"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_16"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_17"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_18"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_19"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_20"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_21"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_22"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_23"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_24"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blank_element_25"
+            android:layout_width="@dimen/slot_element_size"
+            android:layout_height="@dimen/slot_element_size"
+            android:background="@drawable/slots_element_background"
+            app:srcCompat="@drawable/slot_element_h" />
+    </GridLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_background"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/elements">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bet10Button"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="0dp"
+            android:paddingStart="5dp"
+            android:gravity="center"
+            android:background="@drawable/selected_bet_10_background"
+            android:text="@string/bet_10" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bet25Button"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            android:text="@string/bet_25" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bet50Button"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            android:text="@string/bet_50" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bet100Button"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="5dp"
+            android:paddingStart="0dp"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            android:text="@string/bet_100" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tryButton"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/game_button_selector"
+        android:text="@string/try_text"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInfoContainer" />
+
+    <LinearLayout
+        android:id="@+id/textInfoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat">
+
+        <TextView
+            android:id="@+id/balanceText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/text_background"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="7dp"
+            android:textColor="#F0F0"
+            tools:text="Balance: 159135" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/totalWinText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/text_background"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="7dp"
+            android:textColor="#F0F0"
+            tools:text="Total win: 1230491" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

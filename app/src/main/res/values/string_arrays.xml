@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="game_states">
+        <item>Tap on \"Try\" button</item>
+        <item>Tap on \"Try again\" button</item>
+        <item>Game in process.</item>
+        <item>You win!</item>
+        <item>You lose…</item>
+        <item>Game over!</item>
+    </array>
+</resources>

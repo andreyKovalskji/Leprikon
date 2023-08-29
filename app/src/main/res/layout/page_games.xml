@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/gamesTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        android:text="@string/games"
+        android:textSize="40sp"
+        android:textColor="#F0F0"
+        android:background="@drawable/games_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1.27469"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/patrick" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/text_background"
+        android:columnCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gamesTitleText">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/openSlotsPageButton"
+            android:layout_width="135dp"
+            android:layout_height="106dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="20dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/slots_preview" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:srcCompat="@drawable/games_center_line"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/openBlankPageButton"
+            android:layout_width="135dp"
+            android:layout_height="106dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="20dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/blank_preview" />
+
+        <TextView
+            android:id="@+id/openSlotsPageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:paddingBottom="10dp"
+            android:includeFontPadding="false"
+            android:paddingTop="0dp"
+            android:gravity="center"
+            android:text="@string/slots"
+            android:textSize="30sp"
+            android:textColor="#F0F0" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:srcCompat="@drawable/games_center_line"/>
+
+        <TextView
+            android:id="@+id/openBlankPageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:paddingBottom="10dp"
+            android:paddingTop="0dp"
+            android:includeFontPadding="false"
+            android:gravity="center"
+            android:text="@string/blank"
+            android:textSize="30sp"
+            android:textColor="#F0F0"/>
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
