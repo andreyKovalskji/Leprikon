@@ -16,6 +16,7 @@ import android.os.Build.VERSION
 import android.os.Environment
 import android.os.Parcelable
 import android.provider.MediaStore
+import android.view.WindowManager
 import android.webkit.ValueCallback
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
@@ -40,6 +41,8 @@ class MainActivity : AppCompatActivity() {
 //            if(data != null && data.let_in && data.url != null && data.contains("http")) {
             if(data != null && data.contains("http")) {
                 Log.i("Data receiver", "Received data: $data")
+                @Suppress("DEPRECATION")
+                this@MainActivity.window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE)
                 supportFragmentManager.beginTransaction()
                     .replace(R.id.pages, WebPage(data, requestPermissionLauncher,
                         { mFilePathCallback }) {
@@ -109,6 +112,7 @@ class MainActivity : AppCompatActivity() {
                 listOf(Intent.EXTRA_INTENT to old),
                 listOf(Intent.EXTRA_INITIAL_INTENTS to takePictureIntent.toArray())
             )
+            @Suppress("DEPRECATION")
             startActivityForResult(chooserIntent, 1)
         }
     }
@@ -123,6 +127,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    @Deprecated("Deprecated in Java")
     public override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         mFilePathCallback?.let {
